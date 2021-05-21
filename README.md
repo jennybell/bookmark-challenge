@@ -18,6 +18,9 @@
 > So I can remove a bookmark from my list
 > I want to be able to delete a bookmark from Bookmark Manager
 
+> As a user
+> So I can change a bookmark
+> I want to be able to update a bookmark in Bookmark Manager 
 
 # Set up instructions
 
