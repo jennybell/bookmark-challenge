@@ -7,7 +7,7 @@ describe Bookmark do
     subject(:bookmark) { described_class.new }
 
     it 'returns all bookmarks' do
-      connection = PG.connect(dbname: 'bookmark_manager_test')
+    PG.connect(dbname: 'bookmark_manager_test')
 
       bookmark = Bookmark.create(url: 'http://www.makersacademy.com', title: 'Makers')
       Bookmark.create(url: 'http://www.destroyallsoftware.com', title: 'Destroy All Software')
@@ -60,16 +60,16 @@ describe Bookmark do
     end
   end
 
-describe '.find' do
-  it 'returns the requested bookmark object' do
-    bookmark = Bookmark.create(title: 'Makers Academy', url: 'http://www.makersacademy.com')
+  describe '.find' do
+    it 'returns the requested bookmark object' do
+      bookmark = Bookmark.create(title: 'Makers Academy', url: 'http://www.makersacademy.com')
 
-    result = Bookmark.find(id: bookmark.id)
+      result = Bookmark.find(id: bookmark.id)
 
-    expect(result).to be_a Bookmark
-    expect(result.id).to eq bookmark.id
-    expect(result.title).to eq 'Makers Academy'
-    expect(result.url).to eq 'http://www.makersacademy.com'
+      expect(result).to be_a Bookmark
+      expect(result.id).to eq bookmark.id
+      expect(result.title).to eq 'Makers Academy'
+      expect(result.url).to eq 'http://www.makersacademy.com'
+    end
   end
-end
 end

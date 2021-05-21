@@ -2,7 +2,7 @@
 
 feature 'Bookmarks list' do
   scenario 'shows a list of bookmarks' do
-    connection = PG.connect(dbname: 'bookmark_manager_test')
+    PG.connect(dbname: 'bookmark_manager_test')
     Bookmark.create(url: 'http://www.makersacademy.com', title: 'Makers')
     Bookmark.create(url: 'http://www.destroyallsoftware.com', title: 'Destroy All Software')
     Bookmark.create(url: 'http://www.google.com', title: 'Google')
