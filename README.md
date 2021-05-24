@@ -2,6 +2,8 @@
 
 ## User stories
 
+#UPDATE - This is extremely unfinished - I spent a lot of time trying and failing to get data mapper working and then wsn't able to come back to do the challenge using PG
+
 > As a user  
 > So I can revisit websites  
 > I would like to be able to view a list of bookmarks

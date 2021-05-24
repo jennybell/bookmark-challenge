@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 feature 'Bookmarks list' do
   scenario 'shows a list of bookmarks' do
